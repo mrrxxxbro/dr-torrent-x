@@ -68,7 +68,7 @@ async def stats(_, message):
     UMT = 'Unlimited' if config_dict['USER_MAX_TASKS'] == '' else config_dict['USER_MAX_TASKS']
     BMT = 'Unlimited' if config_dict['QUEUE_ALL'] == '' else config_dict['QUEUE_ALL']
 
-    stats = f'<b><i><u>Zee Bot Statistics</u></i></b>\n\n'\
+    stats = f'<b><i><u>Dr. Torrent X  Bot Statistics</u></i></b>\n\n'\
             f'<b><i><u>Repo Info</u></i></b>\n' \
             f'<b>Updated:</b> <code>{last_commit}</code>\n' \
             f'<b>Version:</b> <code>{version}</code>\n' \
@@ -122,10 +122,10 @@ async def start(_, message):
     elif config_dict['DM_MODE']:
         start_string = 'Bot Started.\n' \
                        'Now I can send your stuff here.\n' \
-                       'Use me here: @Z_Mirror'
+                       'Use me in Dr. Torrent X Group'
     else:
         start_string = 'Sorry, you cant use me here!\n' \
-                       'Join @Z_Mirror to use me.\n' \
+                       'Join Dr. Torrent X Group to use me.\n' \
                        'Thank You'
     await sendMessage(message, start_string)
 
@@ -153,7 +153,7 @@ async def ping(_, message):
     await editMessage(reply, f'{ping_time} ms')
 
 async def log(_, message):
-    await sendFile(message, 'Z_Logs.txt')
+    await sendFile(message, 'Dr. Torrent X Logs.txt')
 
 help_string = f'''
 <b>NOTE: Click on any CMD to see more detalis.</b>
